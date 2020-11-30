@@ -1,3 +1,4 @@
+[![Build Status](https://dev.azure.com/TeqTalks/multistage-tt/_apis/build/status/mslearn-tailspin-spacegame-web-deploy?branchName=release)](https://dev.azure.com/TeqTalks/multistage-tt/_build/latest?definitionId=13&branchName=release)
 
 ## Contributing
 
