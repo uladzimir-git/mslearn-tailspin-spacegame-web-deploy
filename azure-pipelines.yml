@@ -100,7 +100,7 @@ stages:
           - task: AzureWebApp@1
             displayName: 'Azure App Service Deploy: website'
             inputs:
-              azureSubscription: 'serviceconnectionNamed213123'
+              azureSubscription: 'ServiceConnection-dev'
               resourceGroupName: '$(ResourceGrNameDev)'
               appName: '$(WebAppNameDev)'
               package: '$(Pipeline.Workspace)/drop/$(buildConfiguration)/*.zip'
@@ -126,7 +126,7 @@ stages:
           - task: AzureWebApp@1
             displayName: 'Azure App Service Deploy: website'
             inputs:
-              azureSubscription: 'serviceconnectionNamed213123'
+              azureSubscription: 'ServiceConnection-test'
               resourceGroupName: '$(ResourceGrNameTest)'
               appName: '$(WebAppNameTest)'
               package: '$(Pipeline.Workspace)/drop/$(buildConfiguration)/*.zip'
@@ -151,7 +151,7 @@ stages:
           - task: AzureWebApp@1
             displayName: 'Azure App Service Deploy: website'
             inputs:
-              azureSubscription: 'serviceconnectionNamed213123'
+              azureSubscription: 'ServiceConnection-stage'
               resourceGroupName: '$(ResourceGrNameStaging)'
               appName: '$(WebAppNameStaging)'
               package: '$(Pipeline.Workspace)/drop/$(buildConfiguration)/*.zip'
